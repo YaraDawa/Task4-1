@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        var arr = [];
+        var sum = 0;
+        var sum2 = 0;
+        for (var i = 0, t = 10; i < t; i++) {
+            arr.push(Math.round(Math.random() * t));
+        }
+        document.write(arr,"<br>");
+        console.log({ arr });
+
+        for (var index = 0; index < arr.length; index++) {
+            if (arr[index] % 2 == 0) {
+            sum = sum + arr[index];
+            }
+        }
+
+        document.write(sum,"<br>");
+        console.log({ sum });
+
+        for (var index = 0; index < 5; index++) {
+            sum2 = sum2 + arr[index];
+        }
+        document.write(sum2,"<br>");
+        console.log({ sum2 });
+
+        var userobject = {
+            name: "yara Dawa",
+            number: "09993233",
+            age: 26,
+            email: "yara.manhal.dawa@gmail.com",
+        };
+        document.write("<br>");
+        var str = JSON.stringify(userobject);
+        document.write(str, "<br>");
+
+        document.write(userobject.name, "<br>");
+        document.write(userobject.number, "<br>");
+        document.write(userobject.age, "<br>");
+        document.write(userobject.email, "<br>");
+        </script>
+    </body>
+    </html>
